@@ -114,7 +114,7 @@ function LoginComponent() {
                   required
                   value={formData.username}
                   onChange={handleInputChange}
-                  className="block w-full pl-10 pr-3 py-3 border border rounded-lg placeholder-muted focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary sm:text-sm"
+                  className="form-input"
                   placeholder="Enter your username"
                   disabled={isLoading}
                 />
@@ -138,7 +138,7 @@ function LoginComponent() {
                   required
                   value={formData.password}
                   onChange={handleInputChange}
-                  className="block w-full pl-10 pr-3 py-3 border border rounded-lg placeholder-muted focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary sm:text-sm"
+                  className="form-input"
                   placeholder="Enter your password"
                   disabled={isLoading}
                 />

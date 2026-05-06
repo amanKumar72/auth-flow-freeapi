@@ -142,7 +142,7 @@ function ProfileComponent() {
   return (
     <div className="min-h-screen bg-gradient-surface flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       {/* Navigation */}
-      <nav className="bg-surface-1 w-full fixed shadow-sm border-b border-surface-2">
+      <nav className="bg-surface-1 w-full shadow-sm border-b border-surface-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
@@ -398,6 +398,11 @@ function ProfileComponent() {
                   Current Password
                 </label>
                 <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <svg className="h-5 w-5 text-muted" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1V2z"/>
+                    </svg>
+                  </div>
                   <input
                     id="oldPassword"
                     name="oldPassword"
@@ -405,7 +410,7 @@ function ProfileComponent() {
                     required
                     value={passwordData.oldPassword}
                     onChange={handlePasswordInputChange}
-                    className="block w-full rounded-lg border border-accent px-4 py-3 text-primary placeholder:text-primary/50 focus:border-primary focus:ring-2 focus:ring-primary/20 sm:text-sm bg-surface"
+                    className="form-input"
                     placeholder="Enter your current password"
                     disabled={isChangingPassword}
                   />
@@ -417,6 +422,11 @@ function ProfileComponent() {
                   New Password
                 </label>
                 <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <svg className="h-5 w-5 text-muted" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1V2z"/>
+                    </svg>
+                  </div>
                   <input
                     id="newPassword"
                     name="newPassword"
@@ -424,7 +434,7 @@ function ProfileComponent() {
                     required
                     value={passwordData.newPassword}
                     onChange={handlePasswordInputChange}
-                    className="block w-full rounded-lg border border-accent px-4 py-3 text-primary placeholder:text-primary/50 focus:border-primary focus:ring-2 focus:ring-primary/20 sm:text-sm bg-surface"
+                    className="form-input"
                     placeholder="Choose a strong new password"
                     disabled={isChangingPassword}
                   />
@@ -436,6 +446,11 @@ function ProfileComponent() {
                   Confirm New Password
                 </label>
                 <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <svg className="h-5 w-5 text-muted" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1V2z"/>
+                    </svg>
+                  </div>
                   <input
                     id="confirmPassword"
                     name="confirmPassword"
@@ -443,7 +458,7 @@ function ProfileComponent() {
                     required
                     value={passwordData.confirmPassword}
                     onChange={handlePasswordInputChange}
-                    className="block w-full rounded-lg border border-accent px-4 py-3 text-primary placeholder:text-primary/50 focus:border-primary focus:ring-2 focus:ring-primary/20 sm:text-sm bg-surface"
+                    className="form-input"
                     placeholder="Re-enter your new password"
                     disabled={isChangingPassword}
                   />

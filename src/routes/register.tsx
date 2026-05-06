@@ -118,7 +118,7 @@ function RegisterComponent() {
                     required
                     value={formData.username}
                     onChange={handleInputChange}
-                    className="block w-full appearance-none rounded-lg border px-3 py-2 placeholder-muted shadow-sm focus:border-primary focus:outline-none focus:ring-primary sm:text-sm"
+                    className="form-input"
                     placeholder="Choose a username"
                     disabled={isLoading}
                   />
@@ -137,7 +137,7 @@ function RegisterComponent() {
                     required
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="block w-full appearance-none rounded-lg border px-3 py-2 placeholder-muted shadow-sm focus:border-primary focus:outline-none focus:ring-primary sm:text-sm"
+                    className="form-input"
                     placeholder="Enter your email"
                     disabled={isLoading}
                   />
@@ -156,7 +156,7 @@ function RegisterComponent() {
                     required
                     value={formData.password}
                     onChange={handleInputChange}
-                    className="block w-full appearance-none rounded-lg border px-3 py-2 placeholder-muted shadow-sm focus:border-primary focus:outline-none focus:ring-primary sm:text-sm"
+                    className="form-input"
                     placeholder="Create a password"
                     disabled={isLoading}
                   />
@@ -175,7 +175,7 @@ function RegisterComponent() {
                     required
                     value={formData.confirmPassword}
                     onChange={handleInputChange}
-                    className="block w-full appearance-none rounded-lg border px-3 py-2 placeholder-muted shadow-sm focus:border-primary focus:outline-none focus:ring-primary sm:text-sm"
+                    className="form-input"
                     placeholder="Confirm your password"
                     disabled={isLoading}
                   />
